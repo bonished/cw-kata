@@ -1,0 +1,7 @@
+def maskify(cc):
+    toMask = cc
+    toMaskLenght = len(toMask)
+    if toMaskLenght >= 4:
+        return("#" * (len(toMask) - 4) + toMask[-4:])
+    else:
+        return(cc)
